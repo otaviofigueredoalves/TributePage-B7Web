@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* RESET CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* VARIÁVEIS */
+
+:root {
+    --first-color: #D9D9D9;
+    --second-color: #CF5E5E;
+    --third-color: #180101;
+    --title-size: 5.2rem;
+    --subtitle-size:
+}
+
+/* BODY */
+
+body {
+    font-family: 'Almendra', serif;
+    font-weight: bold;
+    background-color: var(--main-bg-color);
+}
+
+/* NAVBAR */
+
+#header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh !important;
+    width: 100%;
+}
+#header-parallax {
+    height: 100vh;
+    background: rgba(0,0,0,0.5) url("assets/imagens/banda.jpg") no-repeat center;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#header-parallax:before{
+    content: "";
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 8px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,0) 10%, #ffffff)
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    /* background-color: red; */
+}
+#navbar-container {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+}
+.navbar-list li {
+    padding: 10px 50px;
+}
+.navbar-list a {
+    position: relative;
+    font-size: 1.3rem;
+    color: #D9D9D9;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.navbar-list a:after {
+    content: "";
+    position: absolute;
+    background-color: var(--second-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar-list a:hover:after {
+    width: 100%;
+}
+.navbar-list a:hover {
+    transition: 0.4s;
+    color: #ffffff;
+}
+
+.logo img {
+    height: 70px;
+}
+
+
+
+/* BANNER */
+
+
+#banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    /* background-color: red; */
+    text-align: center;
+    color: var(--first-color);
+}
+
+.banner-title-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner-title h1 {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 9999px;
+    font-size: 140px;
+}
+#banner-title p {
+    position: relative;
+    margin-top: -20px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 50px;
+}
+#foda-custom {
+    font-family: 'Almendra', serif;
+}
+
+#mark {
+    width: 690px;
+    /* width: calc(100% - 5%); */
+    position: relative;
+    top: 160px;
+    background-color: var(--second-color);
+    height: 90px;
+    z-index: -9999px;
+}
+
+/* SECTION ORIGEM */
+
+#origem {
+    color: var(--third-color)
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+#origem-title h2 {
+    font-size: var(--title-size);
+    /* background-color: #CF5E5E; */
+}
+
+.container-box {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+#origem-content {
+    /* background-color: green; */
+    justify-content: space-between;
+    display: flex;
+    padding: 25px 0px;
+    
+}
+#origem-content a{
+    text-decoration: none;
+    color: var(--third-color)
+}
+
+
+#origem-text {
+    /* background-color: yellow; */
+    width: 554px;
+    height: 100%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    color: var(--third-color)
+}
+#origem-text p {
+    font-size: 1.8rem;
+}
+
+
+.origem-img {
+    font-size: 40px;
+    /* background-color: yellow; */
+    text-align: center;
+}
+.origem-img img {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* SECTION DISCOGRAFIA */
+
+#discografia {
+    background-color: var(--second-color);
+    color: var(--first-color);
+}
+
+#discografia-title h2{
+    font-size: var(--title-size);
+}
+
+.container-box#disco{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+
+.discografia-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:135px;
+    margin-top: 50px;
+    
+}
+
+
+.desc{
+    width: 350px;
+    height: 100%;
+    width: auto;
+    /* background-color: green; */
+    text-align: center;
+}
+
+
+
+.box-content-members h3,p{
+    font-size: 2.0rem;
+}
+
+/* BOX-CONTENT */
+
+.box-content {
+    /* background-color: red; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box-content img {
+    max-width: 300px;
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+}
+
+.box-content a{
+    text-decoration: none;
+    color: var(--first-color)
+}
+
+.box-content a:hover {
+    color: var(--third-color);
+    transition: 0.4s;
+}
+
+/* MEMBROS FORMADORES */
+
+#first-members-title h2{
+    width: 100%;
+    font-size: var(--title-size);
+    color: var(--third-color);
+}
+
+
+.content-members {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:135px;
+    margin-top: 50px;
+}
+
+#first-members .content-members a{
+    color: var(--third-color);
+    text-decoration: none;
+}
+#first-members .content-members a:hover {
+    transition: 0.4s;
+    color: var(--second-color)
+}
+#current-members .content-members a{
+    color: var(--first-color);
+    text-decoration: none;
+}
+#current-members .content-members a:hover {
+    transition: 0.4s;
+    color: var(--third-color)
+}
+
+.box-content-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.box-content-members img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* CURRENT MEMBERS */
+
+#current-members {
+    background-color: var(--second-color);
+    color: var(--first-color)
+}
+
+#current-members-title h2 {
+    font-size: var(--title-size)
+}
+/* UPDATES */
+
+#updates {
+    background-color: var(--first-color);
+}
+
+#updates-content {
+    padding: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#updates h2 {
+    font-size: var(--title-size)
+}
+#updates p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+}
+
+/* FOOTER */
+
+#footer {
+    display: flex;
+    background-color: var(--third-color);
+}
+#footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    color: var(--first-color)
+}
+#footer-content h3 {
+    font-size: 2.3rem;
+}
+
+#copyright{
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.feature-container {
+    padding: 10px 0px;
+    display: flex;
+    gap: 20px;
+}
+.feature-container a {
+    text-decoration: none;
+    color: var(--first-color)
+}
+.feature-container a:hover {
+    color: var(--second-color)
+}

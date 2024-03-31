@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1284px) {
+    
+    #navbar-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .logo {
+        margin: 5%;
+    }
+    
+    .container-box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #first-members-title h2 {
+        text-align: center;
+    }
+
+   #origem-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   #origem-text {
+    width: auto;
+    text-align: center;
+   }
+
+   .origem-img {
+    margin-top: 50px;
+   }
+
+
+   #first-members-title h2{
+    display: flex;
+    
+   }
+
+   .navbar-list li{
+    padding: 10px 30px;
+   }
+  
+}
+
+@media only screen and (max-width: 720px){
+    #banner-title {
+        margin-top: 20%;
+    }
+    #banner-title h1 {
+        margin-top: 50px;
+        font-size: 20.3vw;
+    }
+
+
+    #mark {
+        position: absolute;
+        height: 13vw;
+        width: calc(100% - 5%);
+        top: 52%;
+    }
+    .navbar-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #origem-text p{
+        font-size: 6vw;
+    }
+    #origem-title h2 {
+        font-size: 15vw;
+    }
+    #banner-title p{
+        margin-top: 2%;
+        font-size: 9vw;
+    }
+    #discografia-title h2{
+        font-size: 15vw
+    }
+    #first-members-title h2{
+        font-size: 15vw;
+    }
+    #discografia{
+        height: 100%;
+    }
+    #current-members-title h2{
+        text-align: center;
+        font-size: 15vw;
+    }
+    #updates-content h2{
+        text-align: center;
+        font-size: 15vw;
+    }
+    #updates-content p{
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-height:480px) {
+    #origem {
+        margin-top: 5%;
+    }
+
+    #banner-title p {
+        color: var(--third-color)
+    }
+    .content-members {
+        height: 100%;
+    }
+}
