@@ -47,21 +47,21 @@
   
 }
 
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 836px){
     #banner-title {
         margin-top: 20%;
     }
     #banner-title h1 {
         margin-top: 50px;
-        font-size: 20.3vw;
+        font-size: 18.5vw;
     }
 
 
     #mark {
         position: absolute;
         height: 13vw;
-        width: calc(100% - 5%);
-        top: 52%;
+        width: calc(100% - 10%);
+        top: 56%;
     }
     .navbar-list {
         flex-direction: column;
@@ -69,14 +69,14 @@
     }
 
     #origem-text p{
-        font-size: 6vw;
+        font-size: 7vw;
     }
     #origem-title h2 {
         font-size: 15vw;
     }
     #banner-title p{
-        margin-top: 2%;
-        font-size: 9vw;
+        margin-top: 0.5%;
+        font-size: 7vw;
     }
     #discografia-title h2{
         font-size: 15vw
@@ -91,16 +91,17 @@
         text-align: center;
         font-size: 15vw;
     }
-    #updates-content h2{
+    #updates h2{
         text-align: center;
-        font-size: 15vw;
     }
     #updates-content p{
+        padding: 50px 0px;
         text-align: center;
     }
-    
+    #updates-content {
+        padding: 50px 0px;
+    }
 }
-
 @media only screen and (max-height:480px) {
     #origem {
         margin-top: 5%;
