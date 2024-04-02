@@ -24,8 +24,7 @@ body {
     background-color: var(--main-bg-color);
 }
 
-/* NAVBAR */
-
+/* HEADER */
 #header {
     display: flex;
     flex-direction: column;
@@ -41,12 +40,15 @@ body {
 }
 #header-parallax:before{
     content: "";
-    height: 100vh;
+    height: 101vh;
     width: 100%;
     position: absolute;
     z-index: 8px;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 70%, rgba(0,0,0,0) 10%, #ffffff)
 }
+/* NAVBAR */
+
+
 
 #navbar {
     display: flex;
@@ -229,7 +231,6 @@ body {
 }
 
 .discografia-content {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -240,13 +241,11 @@ body {
 
 
 .desc{
-    width: 350px;
-    height: 100%;
-    width: auto;
-    /* background-color: green; */
+    width: 100%;
     text-align: center;
-}
+    /* background-color: green; */
 
+}
 
 
 .box-content-members h3,p{
@@ -358,6 +357,7 @@ body {
     font-size: var(--title-size)
 }
 #updates p {
+    margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
 }
